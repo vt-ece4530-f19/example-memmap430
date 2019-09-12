@@ -1,0 +1,184 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY "msp430de0nano"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.0"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:32:49 JUNE 04,2016"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to CLOCK_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_location_assignment PIN_A13 -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_location_assignment PIN_B13 -to LED[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+set_location_assignment PIN_A11 -to LED[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+set_location_assignment PIN_D1 -to LED[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
+set_location_assignment PIN_F3 -to LED[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+set_location_assignment PIN_B1 -to LED[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+set_location_assignment PIN_L3 -to LED[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+
+#============================================================
+# KEY
+#============================================================
+set_location_assignment PIN_J15 -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_location_assignment PIN_E1 -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+
+#============================================================
+# SW
+#============================================================
+set_location_assignment PIN_M1 -to SW[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0]
+set_location_assignment PIN_T8 -to SW[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1]
+set_location_assignment PIN_B9 -to SW[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2]
+set_location_assignment PIN_M15 -to SW[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3]
+
+#============================================================
+# GPIO_0, GPIO_0 connect to GPIO Default
+#============================================================
+set_location_assignment PIN_A8 -to HDR_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR_IN[0]
+set_location_assignment PIN_D3 -to HDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[0]
+set_location_assignment PIN_B8 -to HDR_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR_IN[1]
+set_location_assignment PIN_C3 -to HDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[1]
+set_location_assignment PIN_A2 -to HDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[2]
+set_location_assignment PIN_A3 -to HDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[3]
+set_location_assignment PIN_B3 -to HDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[4]
+set_location_assignment PIN_B4 -to HDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[5]
+set_location_assignment PIN_A4 -to HDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[6]
+set_location_assignment PIN_B5 -to HDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[7]
+set_location_assignment PIN_A5 -to HDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[8]
+set_location_assignment PIN_D5 -to HDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[9]
+set_location_assignment PIN_B6 -to HDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[10]
+set_location_assignment PIN_A6 -to HDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[11]
+set_location_assignment PIN_B7 -to HDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[12]
+set_location_assignment PIN_D6 -to HDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[13]
+set_location_assignment PIN_A7 -to HDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[14]
+set_location_assignment PIN_C6 -to HDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[15]
+set_location_assignment PIN_C8 -to HDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[16]
+set_location_assignment PIN_E6 -to HDR[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[17]
+set_location_assignment PIN_E7 -to HDR[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[18]
+set_location_assignment PIN_D8 -to HDR[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[19]
+set_location_assignment PIN_E8 -to HDR[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[20]
+set_location_assignment PIN_F8 -to HDR[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[21]
+set_location_assignment PIN_F9 -to HDR[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[22]
+set_location_assignment PIN_E9 -to HDR[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[23]
+set_location_assignment PIN_C9 -to HDR[24]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[24]
+set_location_assignment PIN_D9 -to HDR[25]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[25]
+set_location_assignment PIN_E11 -to HDR[26]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[26]
+set_location_assignment PIN_E10 -to HDR[27]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[27]
+set_location_assignment PIN_C11 -to HDR[28]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[28]
+set_location_assignment PIN_B11 -to HDR[29]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[29]
+set_location_assignment PIN_A12 -to HDR[30]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[30]
+set_location_assignment PIN_D11 -to HDR[31]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[31]
+set_location_assignment PIN_D12 -to HDR[32]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[32]
+set_location_assignment PIN_B12 -to HDR[33]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HDR[33]
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE msp430/periph/omsp_timerA_undefines.v
+set_global_assignment -name VERILOG_FILE msp430/periph/omsp_timerA_defines.v
+set_global_assignment -name VERILOG_FILE msp430/periph/omsp_timerA.v
+set_global_assignment -name VERILOG_FILE msp430/periph/omsp_gpio.v
+set_global_assignment -name VERILOG_FILE msp430/toplevel.v
+set_global_assignment -name VERILOG_FILE msp430/openMSP430_undefines.v
+set_global_assignment -name VERILOG_FILE msp430/openMSP430_defines.v
+set_global_assignment -name VERILOG_FILE msp430/openMSP430.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_watchdog.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_wakeup_cell.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_uart.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_sync_reset.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_sync_cell.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_sfr.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_scan_mux.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_register_file.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_multiplier.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_mem_backbone.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_frontend.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_execution_unit.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_dbg_uart.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_dbg_i2c.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_dbg_hwbrk.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_dbg.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_clock_mux.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_clock_module.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_clock_gate.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_and_gate.v
+set_global_assignment -name VERILOG_FILE msp430/omsp_alu.v
+set_global_assignment -name VERILOG_FILE msp430/hexdecoder.v
+set_global_assignment -name QSYS_FILE mspconnect.qsys
+set_global_assignment -name QIP_FILE ram16x27648.qip
+set_global_assignment -name QIP_FILE ram16x4096.qip
+set_global_assignment -name SDC_FILE msp430de0nano.SDC
+set_global_assignment -name VERILOG_FILE msp430de0nano.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
